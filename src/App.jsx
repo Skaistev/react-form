@@ -1,32 +1,39 @@
-import { useState } from "react";
+import { BrowserRouter , Route, Routes} from "react-router-dom";
+
+
 import { Basketball } from './components/basketball/Basketball'
 import { List } from './components/list/List'
+import { FirstTry } from "./FirstTry";
+import { NotFound } from "./components/list/NotFound";
+import { BasicLayout } from "../layout/BasicLayout";
+import { LayoutWithAdds } from "../layout/LayoutWithAdds";
 
 function App() {
-
-  const [count, setCount] = useState(0); 
-
-  function increment (){
-    setCount(count +1)
-  }
-  function decrement (){
-    setCount(count -1)
-  }
-
- 
   return (
-    <>
-      <h1>Hooks FTW</h1>
-      <List />
-      <Basketball />
-      <div className='counter'>
-        <button onClick = {decrement}>-</button>
-        <span>{count}</span>
-        <button onClick = {increment}>+</button>
-      </div>
-     
-    </>
+  <BrowserRouter>
+    <Routes>
+      <Route Component={BasicLayout}>
+      <Route index path = '/' element={<FirstTry />}/>
+      <Route path='/basketball' element={< Basketball />} />
+      <Route path="*" element = {<NotFound />} />
+      </Route>
+      <Route Component={LayoutWithAdds}>
+      <Route path="/list" element = {<List />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+
   )
+
+  // return (
+  //   <>
+  //     <h1>Hooks FTW</h1>
+  //     <List />
+  //     <Basketball />
+  //     <FirstTry />
+     
+  //   </>
+  // )
 }
 
 export default App

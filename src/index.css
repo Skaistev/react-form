@@ -17,6 +17,14 @@ body > div {
   flex-direction: column;
   gap: 2rem;
 }
+main {
+  grid-area: main;
+}
+.adds-layout {
+  grid-area: adds;
+  background-color: pink;
+  padding: 2rem;
+}
 
 .counter {
   display: flex;
@@ -34,4 +42,23 @@ padding: 0.5rem 1.5rem;
 font-size: 1.2rem;
 line-height: 3rem;
 
+}
+.ads-layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: 
+   'header header'
+   'main adds'
+   'footer footer'
+  ;
+}
+
+.basic-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+   'header'
+   'main' 
+   'footer'
+  ;
 }

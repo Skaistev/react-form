@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 import style from './List.module.css';
+import { Link } from 'react-router-dom';
 
 export function VegyItem(props) {
-    const {title , price, weigth } = props;
+    const {title , price, weigth, href } = props;
 
     const minVegetablesAmount = 0;
     const maxVegetablesAmount = 10;
@@ -31,23 +32,20 @@ export function VegyItem(props) {
       let total = 0;
         if(count>0){
             total= (price*count).toFixed(2) 
-        } else { total = 0 }
+        } 
         return total 
         
     }
 
     return (
         <li className={style.vegy}>
-            <span className={style.vegyTitle}>{title}</span>
-            <h3>Matas</h3>
-            <div>{weigth}</div>
-            <h3>Kaina</h3>
-            <div>{price}</div>
+            <span className={style.vegyTitle}>{title} {price}&euro;/{weigth}</span>
             <div className={style.controls}>
                 <button onClick={handleCountMinus} className={style.btn}>-</button>
-                <span className={style.count}>{count}</span>
+                <span className={style.count}>{count} </span>
                 <button onClick={handleCountPlus} className={style.btn}>+</button>
             </div>
+            <Link to={'/vegetables/' + href}>Read more</Link>
             <h3>Viso</h3>
             <div>{countTotal(count)}</div>
         </li>

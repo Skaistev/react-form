@@ -2,6 +2,7 @@
 import { useState } from "react";
 import style from './Basketball.module.css'
 import { formatBasketballNumber } from '../../utils/formatBasketballNumber'
+
  
 export function Basketball () {
 
@@ -10,6 +11,8 @@ export function Basketball () {
 
 
   return (
+
+  
     <div className={style.basketball}>
       <h2> Result</h2>
     <div className={style.team}>{formatBasketballNumber(score1)}:{formatBasketballNumber(score2)}</div>
@@ -28,6 +31,7 @@ export function Basketball () {
         </div>
     </div>
     </div>
+ 
   )
 }
 

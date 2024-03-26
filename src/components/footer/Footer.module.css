@@ -1,0 +1,9 @@
+.footer {
+        grid-area: footer;
+        display: flex;
+        padding: 1rem 2rem;
+        background-color: #eee;
+        border-bottom: 0.1rem solid #ccc;
+        box-shadow: 0 0.2rem 0.4rem #ccc;
+    
+}
