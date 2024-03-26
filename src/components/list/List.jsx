@@ -14,7 +14,7 @@ export function List() {
       title: 'Morkos',
        svoris: "kg",
        kaina: 10,
-       href: "morkosd"
+       href: "morkos"
        },
        {
         title: 'Svogunai',
@@ -26,7 +26,7 @@ export function List() {
         title: 'Kopustai',
         svoris: "vnt",
         kaina: 6,
-        href: "kopustas"
+        href: "kopustai"
        },
        {
         title: 'Pomidorai',

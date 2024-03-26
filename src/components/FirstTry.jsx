@@ -15,15 +15,16 @@ export function FirstTry() {
 
     return (
    
-    <>
+        
+            <main>
                 <h1>Hooks FTW</h1>
                 <div className="counter">
                     <button onClick={decrement}>-</button>
                     <span>{count}</span>
                     <button onClick={increment}>+</button>
                 </div>
-   
-   </>
+             </main>
+           
     
     );
 }

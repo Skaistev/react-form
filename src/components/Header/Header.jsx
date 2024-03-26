@@ -9,7 +9,7 @@ export function Header (){
       <nav>
          <Link to='/' >Home</Link>
          <Link to='/basketball' >Baskeltball</Link>
-         <Link to='/list' >List</Link>
+         <Link to='/vegetables' >List</Link>
       </nav>
     </header>
    )
