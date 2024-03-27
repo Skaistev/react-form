@@ -8,7 +8,7 @@ export function List() {
       {title: 'Bulves',
        svoris: "kg",
        kaina: 2.5,
-     href: "bulves"
+    //  href: "bulves"
        },
        {
       title: 'Morkos',

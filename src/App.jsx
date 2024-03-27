@@ -7,6 +7,7 @@ import { PageBasketball } from './pages/PageBasketball';
 import { PageNotFound } from './pages/PageNotFound';
 import { PageVegetables } from './pages/PageVegetables';
 import { PageVegetablesInner } from './pages/PageVegetablesInner';
+import { PageStudents } from "./pages/PageStudents";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/basketball' element={<PageBasketball />} />
           <Route path='*' element={<PageNotFound />} />
           <Route path='/vegetables/:id' element={<PageVegetablesInner />} />
+          <Route path='/students' element={<PageStudents />} />
         </Route>
         <Route Component={LayoutWithAdds}>
           <Route path='/vegetables' element={<PageVegetables />} />

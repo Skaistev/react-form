@@ -1,0 +1,24 @@
+{
+    "klientas": [
+        {
+            "name": "Jonas",
+            "pavardė": "Jonaitis",
+            "amzius": 24,
+            "grupė": "valytes"
+
+        },
+        {
+            "name": "Petras",
+            "pavardė": "Petraitis",
+            "amzius": 24,
+            "grupė": "ziogeliai"
+        },
+        {
+            "name": "Marytė",
+            "pavardė": "Karvelytė",
+            "amzius": 16,
+            "grupė": "ziogeliai"
+        }
+       
+    ]
+}

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import style from './List.module.css';
 import { Link } from 'react-router-dom';
+import { createHref } from '../../utils/createHref';
 
 export function VegyItem(props) {
     const {title , price, weigth, href } = props;
@@ -45,7 +46,7 @@ export function VegyItem(props) {
                 <span className={style.count}>{count} </span>
                 <button onClick={handleCountPlus} className={style.btn}>+</button>
             </div>
-            <Link to={'/vegetables/' + href}>Read more</Link>
+            <Link to={'/vegetables/' + createHref(title)}>Read more</Link>
             <h3>Viso</h3>
             <div>{countTotal(count)}</div>
         </li>
