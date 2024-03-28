@@ -1,0 +1,23 @@
+.clientList {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.age{
+    border: 0.1rem solid black;
+}
+
+.info {
+    border: 0.1rem solid black;
+}
+
+.pilnametis {
+    background-color: red;
+}

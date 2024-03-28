@@ -8,6 +8,9 @@ import { PageNotFound } from './pages/PageNotFound';
 import { PageVegetables } from './pages/PageVegetables';
 import { PageVegetablesInner } from './pages/PageVegetablesInner';
 import { PageStudents } from "./pages/PageStudents";
+import { PageKlientas } from "./pages/PageKlientas";
+import { PageRegister } from "./pages/PageRegister";
+
 
 
 function App() {
@@ -20,9 +23,11 @@ function App() {
           <Route path='*' element={<PageNotFound />} />
           <Route path='/vegetables/:id' element={<PageVegetablesInner />} />
           <Route path='/students' element={<PageStudents />} />
+          <Route path='/register' element={<PageRegister />} />
         </Route>
         <Route Component={LayoutWithAdds}>
           <Route path='/vegetables' element={<PageVegetables />} />
+          <Route path='/klientas' element={<PageKlientas />} />
           {/* <Route path='/vegetables/:id' element={<PageVegetablesInner />} /> */}
         </Route>
       </Routes>

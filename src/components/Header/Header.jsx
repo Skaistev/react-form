@@ -11,6 +11,8 @@ export function Header (){
          <Link to='/basketball' >Baskeltball</Link>
          <Link to='/vegetables' >List</Link>
          <Link to='/students'>Students</Link>
+         <Link to='/klientas'>Klientas</Link>
+         <Link to='/register'>Register</Link>
       </nav>
     </header>
    )
